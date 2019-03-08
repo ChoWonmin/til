@@ -13,6 +13,6 @@
 - Scalar multiplication (scaling)
 - Linear Combination
 ``
-  a1v1 + a2v2 + a3v3 + a4v4 + ...git rm --cached -f *.DS_Store
+  a1v1 + a2v2 + a3v3 + a4v4 + ...
 ``
 
