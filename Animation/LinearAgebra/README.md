@@ -23,6 +23,12 @@
 > - if **v1**, **v2** is zero vector, vector space is zero vector
 
 ##### 5. Linearly dependent : 선형적으로 종속적이다
+> - vector is a linear combination of the other. In this case the dimensionality of the space spanned by the vectors is smaller than the original vector
+- #####Example
+> - **v** = *a1***v1** + *a2***v2** => 자유도는 *a1*, *a2*로 2개라서 평면 표현이 가능하다
+> - But 3*x* + 4*y* = 5, 6*x* + 4*8* = 10 같이 Linearly dependent 경우는 제외
+> - 즉, ad-bc가 0인 경우, 역행렬이 없는 경우
+
 
 
 
