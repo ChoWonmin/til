@@ -1,3 +1,8 @@
+.vscode
+CMakeLists.txt
+cmake-build-debug
+
+
 # mac
 .DS_Store
 
