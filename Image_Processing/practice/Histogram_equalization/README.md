@@ -1,5 +1,11 @@
-# Cartoon Shading
+# Histogram Equalization
 
-![out.png](./out01.png)
+> technique for adjusting image intensities to enhance contrast.
 
-![out.png](./out02.png)
+### Original Image
+
+![out.png](./src.jpg)
+
+### Histogram Equalizaion Image
+
+![out.png](./out.jpg)
