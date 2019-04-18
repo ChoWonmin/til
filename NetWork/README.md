@@ -37,4 +37,4 @@
 
 - IETF : Internet Engineering Task Force (국제인터넷표준화기구)
 - RFC (request for comments) : IETF에서, 인터넷에서 기술을 구현하는 데에 필요한 절차 등을 제공하는 공문서 간행물이다. 대부분 인터넷에서 기술을 구현함에 있어서 요구되는 상세한 절차와 기본틀을 제공하는 내용이다.
-- IRTF (Internet Research Task Force) : IETF는 기술 구현에 관련되 기관이라면 IRTF는 연구기관의 성격이다. IETF보다 미래지향적인 기관이다. 산하기관에 T2TRG(Thing-to-Thing Research Group), HRPC(Human Right Protocol Considerations Research Group)처럼 IoT, 인권에 대한 연구가 흥미롭다.
+- IRTF (Internet Research Task Force) : IETF는 기술 구현에 관련되 기관이라면 IRTF는 연구기관의 성격이 강하다. IETF보다 미래지향적인 기관이다. 산하기관에 T2TRG(Thing-to-Thing Research Group), HRPC(Human Right Protocol Considerations Research Group)처럼 IoT, 인권에 대한 연구가 흥미롭다.
