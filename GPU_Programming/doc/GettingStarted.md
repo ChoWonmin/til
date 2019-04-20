@@ -1,0 +1,107 @@
+# Getting Started
+
+## GLFW
+
+> create and manage windows and OpenGL contexts, as well as handle joystick, keyboard and mouse input.
+
+## GLAD
+
+> loading library to access the latest OpenGL functionality. 최신의 OpenGL를 사용하려면 최신의 function pointer를 설정해줘야 한다.
+
+## GLM
+
+> pre-made mathematics libraries. header-only library.
+
+## xcode에서 setting 하기
+
+1. glfw, glm 다운 받기
+
+```bash
+brew install glm
+brew install glfw
+
+# check download
+ls /usr/local/lib
+ls /usr/local/include
+```
+
+2. Xcode에서 프젝트 생성
+
+3. Header Search Path
+
+- Search Paths->Header Search Path 중 프로젝트 부분에 /usr/local/include
+
+4. Library setting
+
+- Add Files to “project name”
+- /usr/local/lib/libglfw3.dylib
+- /System/Library/Frameworks/OpenGL.framework
+
+5. obj 파일, 외부 파일 추가
+
+- Build Phases > copy files에 추가
+
+### hello window 예제
+
+```c++
+#include <stdlib.h>
+#include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
+#include <glm/gtx/transform.hpp>
+
+void render( GLFWwindow* window );
+int main(void) {
+  if ( !glfwInit() )
+    exit(EXIT_FAILURE);
+
+  #ifdef __APPLE__
+    glfwWindowHint( GLFW_CONTEXT_VERSION_MAJOR, 4 );
+    glfwWindowHint( GLFW_CONTEXT_VERSION_MINOR, 1 );
+    glfwWindowHint (GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+    glfwWindowHint( GLFW_OPENGL_PROFILE,GLFW_OPENGL_CORE_PROFILE );
+  #endif
+    GLFWwindow* window = glfwCreateWindow( 640, 480, "Hello", NULL, NULL );
+    glfwMakeContextCurrent( window );
+
+  while ( !glfwWindowShouldClose( window ) ) {
+    render( window ); glfwPollEvents();
+  }
+
+  glfwDestroyWindow( window ); glfwTerminate();
+}
+
+void render( GLFWwindow* window ) {
+  int width, height;
+  glfwGetFramebufferSize( window, &width, &height );
+  glViewport( 0, 0, width, height );
+  glClearColor( 0, 0, .5, 0 );
+  glClear( GL_COLOR_BUFFER_BIT );
+  glfwSwapBuffers( window );
+}
+```
+
+## Compiling a Shader
+
+- shaders can only be compiled within the context of a running OpenGL program
+- create a shader object
+- provide the source code(set of string) to the shader object
+- ask the shader objcet to compile the code
+
+```c++
+// vertex shader
+int vertexShader = glCreateShader(GL_VERTEXT_SHADER);
+glShaderSource(vertextShader, 1, &vertextShaderSource, NULL); // vertextShaderSource는 shader codo(string set)
+glComoileShader(vertextShader);
+
+int success;
+char infoLog[512];
+glGetShaderDiv(vertexShader, GL_COMPILE_STATUS, &success);
+
+if(!success) {
+  glShaderInfoLog(vertexShader, 512, NULL, infoLog);
+  cout << "Error :: " << infoLog << endl;
+}
+```
+
+## Linking
