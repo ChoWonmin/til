@@ -1,0 +1,22 @@
+# Matrices
+
+> vertor of vectors
+
+## Matrix Operation
+
+### 1. Addition
+
+### 2. Scalar Multiplication
+
+### 3. Product
+
+### 4. Transpose
+
+### 5. Inverse
+- **M** **M** = **M** **M** = **I**
+- **y** **M** => x = **M** y
+- 역행렬은 nxn 행렬 
+
+## Transform
+
+&#9658
