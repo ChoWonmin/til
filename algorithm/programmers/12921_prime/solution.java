@@ -1,5 +1,3 @@
-package prime;
-
 public class Main {
 	
 	public static int solution(int num) {
