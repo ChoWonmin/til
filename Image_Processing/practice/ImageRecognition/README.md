@@ -1,13 +1,13 @@
-# Image Recognition
+# Image Recognition : Coin Dinder
 
-## coin finder
+## Sample 1
 
-### sample 1
+| Source                          | Closing                               | Out                           |
+| ------------------------------- | ------------------------------------- | ----------------------------- |
+| ![src.png](./images/coins1.jpg) | ![closing.png](./images/closing1.jpg) | ![out.png](./images/out1.jpg) |
 
-![src.png](./images/coins1.jpg)
-![out.png](./images/out1.jpg)
+## Sample 2
 
-### sample 2
-
-![src.png](./images/coins2.jpg)
-![out.png](./images/out2.jpg)
+| Source                          | Closing                               | Out                           |
+| ------------------------------- | ------------------------------------- | ----------------------------- |
+| ![src.png](./images/coins2.jpg) | ![closing.png](./images/closing2.jpg) | ![out.png](./images/out2.jpg) |
