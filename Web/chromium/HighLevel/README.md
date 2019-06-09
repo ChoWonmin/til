@@ -4,7 +4,7 @@
 
 ## Architectural overview
 
-Chromium은 rendering engine의 안정성을 위해서 tab 별로 proccess를 나누었다. rendering engine process이 다른 시스템에 접근하는 것을 제한했다.
+Chromium은 rendering engine의 안정성을 위해서 tab 별로 process를 나누었다. rendering engine process이 다른 시스템에 접근하는 것을 제한했다.
 
 memory protection and access control brought to operating systems의 이점을 가진다.
 
