@@ -8,32 +8,37 @@
 
 #include <iostream>
 #include <opencv2/opencv.hpp>
-#include <vector>
 
 using namespace std;
 
 int main(int argc, const char *argv[])
 {
 
-  vector<cv::Mat> AList;
-  vector<cv::Mat> TList;
-  vector<cv::Mat> SList;
+  cv::Mat img = cv::imread("images/sk3.png", 0);
+  img = 255 - img;
+  cv::threshold(img, img, 127, 255, cv::THRESH_BINARY);
 
-  AList[0] = 255 - cv::imread("images/sk1.png", 0);
+  cv::Mat skel(img.size(), CV_8UC1, cv::Scalar(0));
+  cv::Mat temp(img.size(), CV_8UC1);
+  cv::Mat eroded;
+  cv::Mat element = cv::getStructuringElement(cv::MORPH_CROSS, cv::Size(3, 3));
 
-  cv::Mat kernel = cv::Mat(5, 5, CV_8U);
+  bool done;
 
-  cv::morphologyEx(AList[0], TList[0], cv::MORPH_OPEN, cv::Mat(15, 15, CV_8U));
-  cv::bitwise_and(~TList[0], AList[0], SList[0]);
-
-  for (int i = 1; i < 10; i++)
+  do
   {
-    cv::erode(AList[i - 1], AList[i], kernel);
-    cv::morphologyEx(AList[i], TList[i], cv::MORPH_OPEN, cv::Mat(15, 15, CV_8U));
-    cv::bitwise_and(~TList[i], AList[i], SList[i]);
-  }
+    cv::morphologyEx(img, temp, cv::MORPH_OPEN, element);
+    cv::bitwise_not(temp, temp);
+    cv::bitwise_and(img, temp, temp);
+    cv::bitwise_or(skel, temp, skel);
+    cv::erode(img, img, element);
 
-  cv::imshow("S1", SList[9]);
+    double max;
+    cv::minMaxLoc(img, 0, &max);
+    done = (max == 0);
+  } while (!done);
+
+  cv::imshow("skel", skel);
   cv::waitKey();
 
   return 0;
