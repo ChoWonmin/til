@@ -19,3 +19,12 @@ const perf = firebase.performance();
 ```shell
 npm install --save-dev first-input-delay
 ```
+
+```js
+const trace = perf.trace('customTraceName');
+trace.start();
+
+// code that you want to trace
+
+trace.stop();
+```
