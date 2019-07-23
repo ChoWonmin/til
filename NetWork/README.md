@@ -11,21 +11,20 @@
   > 2. provides programming interface to apps
 - ### in component view
   > 1. Connected computing devices
-  >
-  > - Hosts = end systems
-  > - runnig network apps
+  >     - Hosts = end systems
+  >     - runnig network apps
   >
   > 2. Communication links
   >
-  > - Fiber, radio, satellite
+  >     - Fiber, radio, satellite
   >
   > 3. Packet switches
   >
-  > - routers and switches
+  >     - routers and switches
   >
   > 4. Network of network
   >
-  > - interconnected ISPs
+  >     - interconnected ISPs
 
 ## Protocols
 
