@@ -3,7 +3,7 @@
 ## Requirements
 
 ### 1. JDK 1.8
-### 2. Spring Tool Suite (eclipse)
+### 2. [Spring Tool Suite (eclipse)](https://spring.io/tools)
 ### 3. Eclipse Gradle Plugin
 
 ---
@@ -20,15 +20,27 @@
 
     ![egradle](./images/egradle.PNG)
 
-3. Convert General project to Gradle
+3. Import General Project
 
-    Configure > Add Gradle Nature
+4. Convert General project to Gradle
+
+    Click **Configure > Add Gradle Nature**
 
     ![convert](./images/convert.png)
 
-4. Open Gradle-Tasks View
+5. Open Gradle-Tasks View
 
-5. Run Server
+    - click **Window > Show View > Other**
+
+    ![gradle-task](./images/open1.PNG)
+    
+    - click **Gradle > Gradle Tasks**
+
+    ![gradle-task](./images/open2.PNG)
+
+6. Run Server
+
+    ![gradle-task](./images/task.PNG)
 
 ---
 
