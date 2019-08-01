@@ -31,3 +31,21 @@
   );
 }
 ```
+
+## 2. Using Variable
+
+``` html
+<div class="pie" style="--segment1: 40; --segment2: 70;"></div>
+<div class="pie" style="--segment1: 20; --segment2: 50;"></div>
+<div class="pie" style="--segment1: 10; --segment2: 80;"></div>
+```
+
+``` css
+.pie {
+  background-image: conic-gradient(
+    #d44 calc(3.6deg * var(--segment1)),
+    #fc3 0 calc(3.6deg * var(--segment2)),
+    #ac0 0
+  );
+}
+```
