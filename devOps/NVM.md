@@ -1,6 +1,6 @@
 # NVM
 
-> ## Node Version Manager
+> ## [Node Version Manager](https://github.com/nvm-sh/nvm)
 
 ---
 
@@ -45,4 +45,22 @@ echo "source $(brew — prefix nvm)/nvm.sh" >> .zhsrc
 nvm is not compatible with the npm config "prefix" option: currently set to "/Users/fabian/.nvm/versions/node/v8.10.0" Run `nvm use - delete-prefix v6.5.0` to unset it.
 ```
 
+- remove node files controlled by nvm
+``` bash
+#check all module installed.
+$ npm ls -g — depth=0
 
+#delete node_modules folders
+$ sudo rm -rf /usr/local/lib/node_modules
+
+#delete node
+$ sudo rm /usr/local/bin/node
+
+#delete global node module alias
+$ cd /usr/local/bin && ls -l | grep “../lib/node_modules/” | awk ‘{print $9}’| xargs rm
+```
+
+- restart terminal and install nvm by curl
+``` bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+```
