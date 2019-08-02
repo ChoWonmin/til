@@ -39,7 +39,7 @@ echo "source $(brew — prefix nvm)/nvm.sh" >> .zhsrc
 . ~/.zshrc
 ```
 
-#### error message
+#### if you show error message
 
 ```
 nvm is not compatible with the npm config "prefix" option: currently set to "/Users/fabian/.nvm/versions/node/v8.10.0" Run `nvm use - delete-prefix v6.5.0` to unset it.
