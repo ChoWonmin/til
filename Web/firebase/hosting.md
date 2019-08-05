@@ -1,9 +1,24 @@
 # Hosting
 
 1. Firebase CLI 설치
-2. 프로젝트 디렉토리 설정
-3. 사이트 배포
-4. Firebase 웹 앱에 연결
+
+``` bash
+npm install -g firebase-tools
+```
+2. Firebase Login & Init
+``` bash
+firebase login
+firebase init
+```
+
+3. 프로젝트 디렉토리 설정
+
+4. 사이트 배포
+``` bash
+firebase deploy
+```
+
+5. Firebase 웹 앱에 연결
 
 ## Performance Monitoring
 
