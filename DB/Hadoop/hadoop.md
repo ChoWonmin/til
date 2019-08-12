@@ -4,3 +4,4 @@
 
 ## map reduce
 ## jar
+## hive
