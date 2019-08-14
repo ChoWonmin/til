@@ -6,4 +6,6 @@
 > programming model and an associated implementation for processing and generating big data sets with a parallel, distributed algorithm on a cluster.
 
 ## jar
+
 ## hive
+> data warehouse software project built on top of Apache Hadoop for providing data query and analysis
