@@ -13,7 +13,7 @@ async function main() {
   const res = await Promise.all([promise1, promise2, promise3]);
 
   const endTime = new Date();
-  console.log(endTime - startTime, res ); // [3, 'bar', "foo"]
+  console.log(endTime - startTime, res ); // 200, [3, 'bar', "foo"]
 }
 
 main();
