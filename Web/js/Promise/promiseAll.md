@@ -48,24 +48,28 @@ async() => {
   const res = await Promise.all([promise1, promise2, promise3]);
   console.log(res); // [3, 42, "foo"]
 }
-
 ```
 
 ### 4. await
 
 ``` js
-const startTime = new Date();
+async function main() {
 
-const promise1 = Promise.resolve(3);
-const promise2 = new Promise(function(resolve, reject) {
-  setTimeout(resolve, 200, 'bar');
-});;
-const promise3 = new Promise(function(resolve, reject) {
-  setTimeout(resolve, 200, 'foo');
-});
+  const startTime = new Date();
 
-const res = await Promise.all([promise1, promise2, promise3]);
+  const promise1 = Promise.resolve(3);
+  const promise2 = new Promise(function(resolve, reject) {
+    setTimeout(resolve, 200, 'bar');
+  });;
+  const promise3 = new Promise(function(resolve, reject) {
+    setTimeout(resolve, 200, 'foo');
+  });
 
-const endTime = new Date();
-console.log(res); // [3, 42, "foo"]
+  const res = await Promise.all([promise1, promise2, promise3]);
+
+  const endTime = new Date();
+  console.log(endTime - startTime, res ); // 204 [ 3, 'bar', 'foo' ]
+}
+
+main();
 ```
