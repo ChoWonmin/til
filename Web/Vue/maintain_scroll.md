@@ -11,5 +11,8 @@ methods: {
     this.scollTop = this.$refs.target.scolltop;
   }
 }
+update() {
+  this.$refs.target.scolltop = this.scrollTop;
+}
 
 ```
