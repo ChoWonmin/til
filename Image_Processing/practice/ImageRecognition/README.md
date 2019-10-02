@@ -1,4 +1,4 @@
-# Image Recognition : Coin Dinder
+# Image Recognition : Coin inder
 
 ## Sample 1
 
