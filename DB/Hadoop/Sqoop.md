@@ -11,4 +11,9 @@
 5. kerberos Security Intergration
 6. Data loading directly to Hive
 
+
 ## Architecture
+
+- Sqoop uses MapReduce for importing or Exporting data
+
+
