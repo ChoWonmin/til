@@ -14,6 +14,6 @@
 
 ## Architecture
 
-- Sqoop uses MapReduce for importing or Exporting data
+Sqoop uses MapReduce for importing or Exporting data
 
 
