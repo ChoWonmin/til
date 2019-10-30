@@ -10,6 +10,14 @@
 
 ---
 
+## Getting Started
+
+### new to mobile development
+
+### already familiar with mobile development
+
+---
+
 ## Reference
 
 https://reactnative.dev/docs/getting-started
