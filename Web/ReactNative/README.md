@@ -12,9 +12,19 @@
 
 ## Getting Started
 
-### new to mobile development
+### 1. new to mobile development
 
-### already familiar with mobile development
+Expo CLI
+
+> set of tools built around React Native and, while it has many features
+
+- Node 10 LTS or greater installed
+
+```bash
+npm install -g expo-cli
+```
+
+### 2. already familiar with mobile development
 
 ---
 
