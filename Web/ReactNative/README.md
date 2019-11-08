@@ -18,6 +18,8 @@ Expo CLI
 
 > set of tools built around React Native and, while it has many features
 
+#### install Expo
+
 - Node 10 LTS or greater installed
 
 ```bash
@@ -28,6 +30,12 @@ expo init AwesomeProject
 cd AwesomeProject
 npm start # you can also use: expo start
 ```
+
+#### install Expo on my phon
+
+- same wireless network
+
+---
 
 ### 2. already familiar with mobile development
 
