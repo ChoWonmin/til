@@ -43,4 +43,6 @@ npm start # you can also use: expo start
 
 ## Reference
 
-https://reactnative.dev/docs/getting-started
+- https://reactnative.dev/docs/getting-started
+- https://expo.io/features
+- https://snack.expo.io/
