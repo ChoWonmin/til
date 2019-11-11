@@ -39,6 +39,10 @@ npm start # you can also use: expo start
 
 ### 2. already familiar with mobile development
 
+#### IOS
+
+#### Android
+
 ---
 
 ## Reference
