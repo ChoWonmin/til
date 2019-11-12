@@ -41,6 +41,15 @@ npm start # you can also use: expo start
 
 #### IOS
 
+```md
+Prerequisite
+
+- Node
+- Watchman
+- React Native command line interface
+- Xcode
+```
+
 #### Android
 
 ---
