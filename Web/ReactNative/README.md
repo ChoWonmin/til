@@ -45,7 +45,7 @@ npm start # you can also use: expo start
 Prerequisite
 
 - Node
-- Watchman
+- Watchman : tool by Facebook for watching changes in the filesystem. It is highly recommended you install it for better performance.
 - React Native command line interface
 - Xcode
 ```
