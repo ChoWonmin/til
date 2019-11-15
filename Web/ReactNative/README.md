@@ -50,6 +50,13 @@ Prerequisite
 - Xcode
 ```
 
+#### install node, watchman
+
+```bash
+brew install node
+brew install watchman
+```
+
 #### Android
 
 ---
