@@ -53,7 +53,7 @@ Prerequisite
 #### install node, watchman
 
 ```bash
-brew install node
+brew install node # 8.3 or newer
 brew install watchman
 ```
 
