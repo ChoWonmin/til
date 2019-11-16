@@ -44,10 +44,10 @@ npm start # you can also use: expo start
 ```md
 Prerequisite
 
-- Node
+- Node # 8.3 or newer
 - Watchman : tool by Facebook for watching changes in the filesystem. It is highly recommended you install it for better performance.
 - React Native command line interface
-- Xcode
+- Xcode # 9.4 or newer
 ```
 
 #### install node, watchman
@@ -56,6 +56,8 @@ Prerequisite
 brew install node # 8.3 or newer
 brew install watchman
 ```
+
+#### Xcode & CocoaPods
 
 #### Android
 
