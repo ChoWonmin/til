@@ -39,7 +39,7 @@ npm start # you can also use: expo start
 
 ### 2. already familiar with mobile development
 
-#### IOS
+#### 2-1. IOS
 
 ```md
 Prerequisite
@@ -57,9 +57,11 @@ brew install node # 8.3 or newer
 brew install watchman
 ```
 
-#### Xcode & CocoaPods
+#### Command Line Tools
 
-#### Android
+#### CocoaPods
+
+#### 3-1. Android
 
 ---
 
