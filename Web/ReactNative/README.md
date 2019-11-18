@@ -59,6 +59,11 @@ brew install watchman
 
 #### Command Line Tools
 
+1. open XCode
+2. Preferences
+3. Locations panel
+4. Install the tools by selecting the most recent version in the Command Line Tools dropdown
+
 #### CocoaPods
 
 #### 3-1. Android
