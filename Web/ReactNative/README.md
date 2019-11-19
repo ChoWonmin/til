@@ -64,6 +64,12 @@ brew install watchman
 3. Locations panel
 4. Install the tools by selecting the most recent version in the Command Line Tools dropdown
 
+#### Installing an iOS Simulator in Xcode
+
+1. Xcode > Preferences
+2. Components
+3. Select a simulator with the corresponding version of iOS you wish to use
+
 #### CocoaPods
 
 #### 3-1. Android
