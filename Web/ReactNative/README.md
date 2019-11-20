@@ -72,6 +72,12 @@ brew install watchman
 
 #### CocoaPods
 
+built with Ruby and it will be installable with the default Ruby available on macOS
+
+```
+sudo gem install cocoapods
+```
+
 #### 3-1. Android
 
 ---
