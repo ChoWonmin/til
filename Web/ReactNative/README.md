@@ -78,6 +78,14 @@ built with Ruby and it will be installable with the default Ruby available on ma
 sudo gem install cocoapods
 ```
 
+#### Creating a new application
+
+```
+npx react-native init AwesomeProject
+```
+
+---
+
 #### 3-1. Android
 
 ---
