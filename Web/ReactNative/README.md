@@ -80,8 +80,14 @@ sudo gem install cocoapods
 
 #### Creating a new application
 
-```
+```bash
 npx react-native init AwesomeProject
+
+# specific version
+npx react-native init AwesomeProject --version X.XX.X
+
+# typescript template
+npx react-native init AwesomeTSProject --template react-native-template-typescript
 ```
 
 ---
