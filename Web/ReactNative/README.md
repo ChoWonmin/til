@@ -93,11 +93,19 @@ npx react-native init AwesomeTSProject --template react-native-template-typescri
 npx react-native run-ios
 ```
 
-####
-
 ---
 
 #### 3-1. Android
+
+```md
+Prerequisite
+
+- Node # 8.3 or newer
+- Watchman : tool by Facebook for watching changes in the filesystem. It is highly recommended you install it for better performance.
+- React Native command line interface
+- JDK
+- Android Studio
+```
 
 ---
 
