@@ -107,6 +107,13 @@ Prerequisite
 - Android Studio
 ```
 
+#### Java Development Kit
+
+```
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk8
+```
+
 ---
 
 ## Reference
