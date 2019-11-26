@@ -103,7 +103,7 @@ Prerequisite
 - Node # 8.3 or newer
 - Watchman : tool by Facebook for watching changes in the filesystem. It is highly recommended you install it for better performance.
 - React Native command line interface
-- JDK
+- JDK # JDK 8 or newer
 - Android Studio
 ```
 
