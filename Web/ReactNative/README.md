@@ -78,21 +78,6 @@ built with Ruby and it will be installable with the default Ruby available on ma
 sudo gem install cocoapods
 ```
 
-#### Creating and Run new application
-
-```bash
-npx react-native init AwesomeProject
-
-# specific version
-npx react-native init AwesomeProject --version X.XX.X
-
-# typescript template
-npx react-native init AwesomeTSProject --template react-native-template-typescript
-
-# run
-npx react-native run-ios
-```
-
 ---
 
 #### 3-1. Android
@@ -114,6 +99,49 @@ brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk8
 ```
 
+#### Android development environment
+
+1. [Install Android Studio](https://developer.android.com/studio/index.html)
+
+- Android SDK
+- Android SDK Platform
+- Performance (Intel ® HAXM) (See here for AMD)
+- Android Virtual Device
+
+2. Install the Android SDK
+
+Appearance & Behavior → System Settings → Android SDK.
+
+3. Configure the ANDROID_HOME environment variable
+
+```bash
+# $HOME/.bash_profile or $HOME/.bashrc
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+```
+
+---
+
+#### Creating and Run new application
+
+```bash
+npx react-native init AwesomeProject
+
+# specific version
+npx react-native init AwesomeProject --version X.XX.X
+
+# typescript template
+npx react-native init AwesomeTSProject --template react-native-template-typescript
+
+# run
+npx react-native run-ios
+npx react-native run-android
+```
+
 ---
 
 ## Reference
@@ -121,3 +149,7 @@ brew cask install adoptopenjdk8
 - https://reactnative.dev/docs/getting-started
 - https://expo.io/features
 - https://snack.expo.io/
+
+```
+
+```
