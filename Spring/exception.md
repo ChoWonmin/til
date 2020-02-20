@@ -15,6 +15,24 @@ public void do() throws NumberFormatException {
 }
 ```
 
+3. Catch the most specific Exception first
+
+``` java
+public void do() {
+    try {
+        doSomething("A message");
+    } catch (NumberFormatException e) {
+        log.error(e);
+    } catch (IllegalArgumentException e) {
+        log.error(e)
+    }
+}
+```
+
+4. Don't Catch Throwable
+
+Errors are thrown by the JVM to indicate serious problems that are not intended to be handled by an application. Typical examples for that are the OutOfMemoryError or the StackOverflowError.
+
 
 ---
 https://dzone.com/articles/9-best-practices-to-handle-exceptions-in-java
