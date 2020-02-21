@@ -33,6 +33,17 @@ public void do() {
 
 Errors are thrown by the JVM to indicate serious problems that are not intended to be handled by an application. Typical examples for that are the OutOfMemoryError or the StackOverflowError.
 
+5. Don’t Log and Throw
+
+``` java
+try {
+    new Long("xyz");
+} catch (NumberFormatException e) {
+    log.error(e);
+    throw e;
+}
+```
+
 
 ---
 https://dzone.com/articles/9-best-practices-to-handle-exceptions-in-java
