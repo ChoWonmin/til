@@ -77,3 +77,11 @@ firebase deploy --only hosting:target-name
   ]
 }
 ```
+
+| 명령                                       | 설명                                                                  |
+| ------------------------------------------ | --------------------------------------------------------------------- |
+| firebase deploy                            | 프로젝트 디렉토리에서 배포 가능한 모든 리소스의 출시 버전을 만듭니다. |
+| firebase deploy --only hosting:target-name | 지정된 호스팅 대상의 리소스만 출시                                    |
+| 버전으로 만듭니다.                         |
+| firebase serve Firebase                    | 프로젝트를 로컬에서 제공합니다.                                       |
+| firebase serve --only hosting:target-name  | 지정된 호스팅 대상의 리소스만 로컬에서 제공합니다.                    |
