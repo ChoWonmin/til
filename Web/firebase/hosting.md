@@ -58,6 +58,8 @@ firebase target:apply hosting target-name resource-name
 firebase deploy --only hosting:target-name
 ```
 
+firebase.json
+
 ```json
 {
   "hosting": [ {
