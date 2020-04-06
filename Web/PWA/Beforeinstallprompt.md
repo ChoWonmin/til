@@ -32,6 +32,14 @@ buttonInstall.addEventListener("click", (e) => {
 });
 ```
 
+### Detect when the PWA was successfully installed
+
+```js
+window.addEventListener("appinstalled", (evt) => {
+  console.log("installed");
+});
+```
+
 ---
 
 ### Reference
