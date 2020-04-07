@@ -40,6 +40,34 @@ window.addEventListener("appinstalled", (evt) => {
 });
 ```
 
+### Update UI based on how the PWA was launched
+
+```css
+@media all and (display-mode: standalone) {
+  body {
+    background-color: yellow;
+  }
+}
+```
+
+### Track how the PWA was launched
+
+- matchMedia()
+- display-mode
+- navigator.standalone (Safari on iOS doesn't support)
+
+```js
+window.addEventListener("load", () => {
+  if (navigator.standalone) {
+    console.log("Launched: Installed (iOS)");
+  } else if (matchMedia("(display-mode: standalone)").matches) {
+    console.log("Launched: Installed");
+  } else {
+    console.log("Launched: Browser Tab");
+  }
+});
+```
+
 ---
 
 ### Reference
