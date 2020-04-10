@@ -185,6 +185,11 @@ function onAnimFrame() {
 }
 ```
 
+### NPM Package
+
+vue2-touch-events
+https://www.npmjs.com/package/vue2-touch-events
+
 ---
 
 ### Reference
@@ -192,3 +197,5 @@ function onAnimFrame() {
 https://developers.google.com/web/fundamentals/design-and-ux/input/touch
 
 https://www.npmjs.com/package/vue2-touch-events
+
+https://alligator.io/vuejs/vue-touch-events/
