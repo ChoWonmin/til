@@ -1,5 +1,7 @@
 # AirFlow
 
+Apache Airflow is an open-source workflow management platform. It started at Airbnb as a solution to manage the company's increasingly complex workflows.
+
 ---
 
 ### Reference
