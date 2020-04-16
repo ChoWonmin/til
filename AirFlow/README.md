@@ -6,10 +6,13 @@ Airflow is a platform created by the community to programmatically author, sched
 
 ## Principles
 
-- Scalable
-- Dynamic
-- Extensible
-- Elegant
+- Scalable : Airflow has a modular architecture and uses a message queue to orchestrate an arbitrary number of workers. Airflow is ready to scale to infinity.
+
+- Dynamic : Airflow pipelines are configuration as code (Python), allowing for dynamic pipeline generation. This allows for writing code that instantiates pipelines dynamically.
+
+- Extensible : Easily define your own operators, executors and extend the library so that it fits the level of abstraction that suits your environment.
+
+- Elegant : Airflow pipelines are lean and explicit. Parametrizing your scripts is built into its core using the powerful Jinja templating engine.
 
 ---
 
