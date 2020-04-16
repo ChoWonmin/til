@@ -14,6 +14,12 @@ Airflow is a platform created by the community to programmatically author, sched
 
 - Elegant : Airflow pipelines are lean and explicit. Parametrizing your scripts is built into its core using the powerful Jinja templating engine.
 
+## Features
+
+1. Pure Python
+2. Useful UI
+3. Plenty of integrations : Airflow provides many plug-and-play operators that are ready to handle your task on Google Cloud Platform, Amazon Web Services, Microsoft Azure and many other services. This makes Airflow easy to use with your current infrastructure.
+
 ---
 
 ### Reference
