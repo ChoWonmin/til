@@ -33,3 +33,5 @@ https://en.wikipedia.org/wiki/Apache_Airflow
 https://github.com/apache/airflow
 
 https://airflow.apache.org/
+
+https://issues.apache.org/jira/projects/AIRFLOW/issues/AIRFLOW-7120?filter=allopenissues
