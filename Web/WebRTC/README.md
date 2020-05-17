@@ -19,6 +19,11 @@ Session Traversal Utilities for NAT (STUN) (acronym within an acronym) is a prot
 
 The client will send a request to a STUN server on the Internet who will reply with the client’s public address and the client is accessible behind the router’s NAT.
 
+### 3. NAT
+
+Network Address Translation (NAT) is used to give your device a public IP address.
+Some routers will have restrictions on who can connect to devices on the network. This can mean that even though we have the public IP address found by the STUN server, not anyone can create a connection. In this situation we need to turn to TURN.
+
 ---
 
 ## Reference
