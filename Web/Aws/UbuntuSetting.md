@@ -64,7 +64,7 @@ sudo apt-get update
 # install latest stable version
 sudo apt-get install -y mongodb-org
 
-#
+# apt-get이 업그레이드되면서 mongodb에 장애 주지않도록 설정
 echo "mongodb-org hold" | sudo dpkg --set-selections
 echo "mongodb-org-server hold" | sudo dpkg --set-selections
 echo "mongodb-org-shell hold" | sudo dpkg --set-selections
