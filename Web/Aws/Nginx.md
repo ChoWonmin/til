@@ -38,3 +38,7 @@ sudo find / -name nginx.conf
 
 https://twpower.github.io/39-install-nginx-on-ubuntu-by-using-apt-get-and-brief-explanation
 https://cheese10yun.github.io/Node-AWS-Nginx/
+
+https://www.youtube.com/watch?v=SlBe9c54GzA
+
+https://cheese10yun.github.io/Node-AWS-Nginx/
