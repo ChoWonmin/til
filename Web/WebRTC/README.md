@@ -42,3 +42,4 @@ Session Description Protocol (SDP) is a standard for describing the multimedia c
 - https://github.com/webrtcHacks/adapter
 - https://www.slideshare.net/ksdc2019/web-rtc-trouble-shooting
 - https://github.com/react-native-webrtc/react-native-webrtc
+- https://socket.io/
