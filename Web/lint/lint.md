@@ -21,6 +21,17 @@ npm i install eslint
 module.ecports = {
   rules: {
     "no-unexpected-multiline": "error",
+    "no-extra-semi": "error", // support auto fix
   },
 };
+```
+
+### 3. add lint script
+
+package.json
+
+```js
+"sripts": {
+  "lint": "lint *.js --fix"
+}
 ```
