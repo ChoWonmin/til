@@ -26,6 +26,12 @@ module.ecports = {
 };
 ```
 
+```js
+module.ecports = {
+  extendes: ["eslint:recommended"],
+};
+```
+
 ### 3. add lint script
 
 package.json
