@@ -38,6 +38,12 @@ package.json
 
 ```js
 "sripts": {
-  "lint": "lint *.js --fix"
+  "lint": "lint src --fix" // src directory
 }
 ```
+
+### 4. auto fix
+
+#### 4-1. git hook
+
+#### 4-2. editer

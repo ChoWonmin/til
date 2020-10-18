@@ -14,3 +14,19 @@ npm i prettier
 npx prettier src/**/*
 npx prettier src/**/* --write #auto fix
 ```
+
+### 3. intergrate elint
+
+install
+
+```
+npm i eslint-config-prettier eslint-plugin-prettier
+```
+
+.eslintrc.js
+
+```js
+module.ecports = {
+  extends: ["eslint:recommended", "plguin:prettier/recommended"],
+};
+```
