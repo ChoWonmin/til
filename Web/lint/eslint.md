@@ -46,4 +46,8 @@ package.json
 
 #### 4-1. git hook
 
+```
+npm i husky
+```
+
 #### 4-2. editer
