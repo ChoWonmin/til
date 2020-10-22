@@ -10,6 +10,7 @@ import subprocess
 
 # 3.5 or later version
 subprocess.run(["ls", "-l"])
+subprocess.run("ls -l", shell=True)
 # before 3.5 version
 subprocess.call(["ls", "-l"])
 ```
@@ -25,3 +26,5 @@ os.system("ls -l")
 ```
 
 - os.system()으로도 system command를 사용 가능
+- python official document에서는 subprocess로 대체하기를 권장
+- https://docs.python.org/3/library/os.html#os.system
