@@ -28,3 +28,21 @@ os.system("ls -l")
 - os.system()으로도 system command를 사용 가능
 - python official document에서는 subprocess로 대체하기를 권장
 - https://docs.python.org/3/library/os.html#os.system
+
+## subprocess function
+
+```python
+import subprocess
+
+p1 = subprocess.run(["ls", "-l"])
+
+print(p1) # CompletedProcess(args=['ls', '-l'], returncode=0)
+print(p1.args) # ['ls', '-l']
+print(p1.stdout) # None
+
+p1 = subprocess.run(["ls", "-l"], capture_output=Ture)
+
+print(p1.stdout.decode())
+# drwxr-xr-x   7 wonmin  staff  224 Apr 30 22:10 example01
+# drwxr-xr-x   5 wonmin  staff  160 Jun 25  2019 example02
+```
