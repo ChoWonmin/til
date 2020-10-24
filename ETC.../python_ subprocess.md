@@ -29,7 +29,9 @@ os.system("ls -l")
 - python official document에서는 subprocess로 대체하기를 권장
 - https://docs.python.org/3/library/os.html#os.system
 
-## subprocess function
+## subprocess detail
+
+### basic
 
 ```python
 import subprocess
@@ -40,9 +42,45 @@ print(p1) # CompletedProcess(args=['ls', '-l'], returncode=0)
 print(p1.args) # ['ls', '-l']
 print(p1.stdout) # None
 
+```
+
+### stdout
+
+```python
+import subprocess
+
 p1 = subprocess.run(["ls", "-l"], capture_output=Ture)
 
 print(p1.stdout.decode())
 # drwxr-xr-x   7 wonmin  staff  224 Apr 30 22:10 example01
 # drwxr-xr-x   5 wonmin  staff  160 Jun 25  2019 example02
+
+
+p1 = subprocess.run(["ls", "-l"], capture_output=Ture, text=True)
+p1 = subprocess.run(["ls", "-l"], stdout=subprocess.PIPE, text=True)
+
+print(p1.stdout)
+print(p1.stdout)
+# drwxr-xr-x   7 wonmin  staff  224 Apr 30 22:10 example01
+# drwxr-xr-x   5 wonmin  staff  160 Jun 25  2019 example02
+```
+
+### file
+
+```python
+import subprocess
+
+with open('output.txt', 'w') as f:
+  p1 = subprocess.run(["ls", "-l"], stdout=f, text=True)
+```
+
+### error
+
+```python
+import subprocess
+
+p1 = subprocess.run(["ls", "-l", "not_exist_file"], capture_output=Ture, text=True)
+
+print(p1.returnCode) # 1
+print(p1.stderr) # ls: not_exist_file: No such file or ditectory
 ```
