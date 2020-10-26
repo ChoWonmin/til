@@ -83,4 +83,19 @@ p1 = subprocess.run(["ls", "-l", "not_exist_file"], capture_output=Ture, text=Tr
 
 print(p1.returnCode) # 1
 print(p1.stderr) # ls: not_exist_file: No such file or ditectory
+
+p1 = subprocess.run(["ls", "-l", "not_exist_file"], capture_output=Ture, text=True, check=True)
+# python throws error
+```
+
+### pipeline
+
+```python
+import subprocess
+
+p1 = subprocess.run(["cat", "text.txt"], capture_output=Ture, text=True)
+p2 = subprocess.run(["grep", "-n", "search_word"], capture_output=Ture, text=True, input=p1.stdout)
+
+## p1, p2 실행과 동일
+p3 = subprocess.run("cat text.txt | grep -n search_word", capture_output=Ture, text=True, shell=True)
 ```

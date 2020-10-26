@@ -30,3 +30,23 @@ module.ecports = {
   extends: ["eslint:recommended", "plguin:prettier/recommended"],
 };
 ```
+
+### 4-1. git hook
+
+```bash
+# lint-staged : 변경된(스테이징된) 파일만 린트를 수행
+npm i husky lint-staged
+```
+
+```json
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "npm run lint"
+  }
+}
+```

@@ -41,13 +41,3 @@ package.json
   "lint": "lint src --fix" // src directory
 }
 ```
-
-### 4. auto fix
-
-#### 4-1. git hook
-
-```
-npm i husky
-```
-
-#### 4-2. editer
