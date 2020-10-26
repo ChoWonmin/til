@@ -50,3 +50,18 @@ npm i husky lint-staged
   }
 }
 ```
+
+### 4-2. vscode editer
+
+1. install ESlint vscode extendsion
+
+2. setting.json
+
+```json
+{
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+```
