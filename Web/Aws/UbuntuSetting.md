@@ -19,7 +19,7 @@ sudo apt-get install build-essential libssl-dev
 2. download nvm
 
 ```
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
 ```
 
 3. NVM path 설정

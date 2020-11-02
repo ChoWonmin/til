@@ -18,7 +18,7 @@ npm i install eslint
 - add rules
 
 ```js
-module.ecports = {
+module.exports = {
   rules: {
     "no-unexpected-multiline": "error",
     "no-extra-semi": "error", // support auto fix
@@ -27,7 +27,7 @@ module.ecports = {
 ```
 
 ```js
-module.ecports = {
+module.exports = {
   extendes: ["eslint:recommended"],
 };
 ```

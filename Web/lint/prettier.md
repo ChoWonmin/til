@@ -26,7 +26,7 @@ npm i eslint-config-prettier eslint-plugin-prettier
 .eslintrc.js
 
 ```js
-module.ecports = {
+module.exports = {
   extends: ["eslint:recommended", "plguin:prettier/recommended"],
 };
 ```
