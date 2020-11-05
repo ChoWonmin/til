@@ -27,7 +27,7 @@ npm i eslint-config-prettier eslint-plugin-prettier
 
 ```js
 module.exports = {
-  extends: ["eslint:recommended", "plguin:prettier/recommended"],
+  extends: ["eslint:recommended", "plugin:prettier/recommended"],
 };
 ```
 
@@ -56,6 +56,12 @@ npm i husky lint-staged
 1. install ESlint vscode extendsion
 
 2. setting.json
+
+    현재 워크스페이스에 설정하기
+    
+    ctrl + shift + p  > Open workspace Settings (JSON)
+    
+    .vscode > setting.json 생성
 
 ```json
 {
