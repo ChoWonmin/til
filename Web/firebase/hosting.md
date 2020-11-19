@@ -10,10 +10,17 @@ npm install -g firebase-tools
 
 ```bash
 firebase login
-firebase init
+# login 완료 후에 error가 지속될 경우, 다시 로그인 필요
+# firebase logout
+
+firebase init hosting
 ```
 
 3. 프로젝트 디렉토리 설정
+
+    - 배포 위치 : dist
+    - 배포 파일 : index.html
+    - github actions 연결
 
 4. 사이트 배포
 
